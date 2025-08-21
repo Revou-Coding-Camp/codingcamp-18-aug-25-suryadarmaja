@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif, Times, serif, sans-serif; 
+  background: #1419a1;   /* warna latar belakang */
+  margin: 0;             
+  padding: 10px;         
+}
+
+h1 {
+  text-align: center;    
+  color: #ffffff;        /* warna teks */
+}
+
+.todo-container {
+  max-width: 600px;                      
+  margin: 20px auto;                     
+  background: rgba(0, 0, 0, 0.575);          /* latar belakang */
+  padding: 20px;                         
+  border-radius: 30px;                   
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.575); 
+}
+
+form {
+  display: flex;   
+  gap: 10px;       
+  margin-bottom: 10px; 
+}
+
+input[type="text"], input[type="date"] {
+  flex: 1;                 
+  padding: 10px;           
+  border: 4px solid #f9cf35;  /* garis border */
+  border-radius: 50px;      /* sudut membulat */
+}
+
+/* Tombol umum */
+button {
+  padding: 10px 16px;   /* ukuran dalam tombol */
+  border: none;         /* tanpa garis pinggir */
+  background: #007bff;  /* warna biru */
+  color: white;         /* teks putih */
+  border-radius: 6px;   /* sudut membulat */
+  cursor: pointer;      /* ubah cursor jadi tangan */
+}
+
+/* Efek hover pada tombol */
+button:hover {
+  background: #0056b3;  /* warna biru lebih gelap */
+}
+
+/* Daftar To-Do (ul) */
+ul {
+  list-style: none; /* hilangkan bullet list */
+  padding: 0;       /* hilangkan padding default */
+}
+
+/* Item daftar To-Do (li) */
+li {
+  display: flex;                /* susun konten dan tombol sejajar */
+  justify-content: space-between; /* jarak antar elemen kiri-kanan */
+  align-items: center;          /* rata tengah secara vertikal */
+  background: #fafafa;          /* latar abu terang */
+  padding: 10px;                /* jarak dalam */
+  border: 1px solid #eee;       /* garis pinggir abu tipis */
+  border-radius: 6px;           /* sudut membulat */
+  margin-bottom: 8px;           /* jarak antar item */
+}
+
+/* Informasi tugas (teks + tanggal) */
+.task-info {
+  display: flex;             /* susun dalam kolom */
+  flex-direction: column;    /* teks tugas di atas, tanggal di bawah */
+}
+
+/* Tanggal tugas */
+.task-date {
+  font-size: 0.85em; /* ukuran lebih kecil */
+  color: #666;       /* abu-abu */
+}
+
+/* Tombol hapus */
+.delete-btn {
+  background: crimson;   /* merah */
+  padding: 6px 10px;     /* ukuran tombol */
+  border-radius: 4px;    /* sudut membulat */
+}
+
+/* Efek hover pada tombol hapus */
+.delete-btn:hover {
+  background: darkred;   /* merah lebih gelap */
+}
+
+/* Area filter (input tanggal + tombol filter & reset) */
+.filter {
+  margin-bottom: 15px; /* jarak bawah */
+  display: flex;       /* susun dalam 1 baris */
+  gap: 10px;           /* jarak antar elemen */
+}
